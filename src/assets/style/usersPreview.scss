@@ -1,9 +1,10 @@
 .user-preview-container {
   box-shadow: rgb(6 24 44 / 40%) 0px 0px 0px 2px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
-  width: 50%;
-  height: 200px;
+  border-radius: 20px;
+  width: 100%;
+  height: 350px;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,6 +14,8 @@
   color: white !important;
   text-decoration: none !important;
   background-color: #201d1d;
+  margin-right: 30px;
+  // padding: 0px 10px;
 }
 
 .user-preview-container:hover {
@@ -33,6 +36,9 @@
 .users-list {
     width: 100%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .user-details-container {
@@ -47,8 +53,12 @@
 }
 
 .user-avatar {
-  margin-right: 30px;
-  margin-bottom: 85px;
+  margin-right: 10px;
+  margin-bottom: 65px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .email {

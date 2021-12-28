@@ -6,11 +6,11 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 export function UsersFilter({setToFilterBy}) {
-  const [filter, setFilterBy] = React.useState('');
+  const [filter, setFilterBy] = React.useState('all-genders');
 
   const handleChange = (event) => {
     setFilterBy(event.target.value);
-    setToFilterBy(filter)
+    setToFilterBy(event.target.value)
   };
 
   return (
@@ -25,10 +25,11 @@ export function UsersFilter({setToFilterBy}) {
           label="FilterBy"
           onChange={handleChange}
           >
-          <MenuItem value={''}>All Genders</MenuItem>        
-          <MenuItem value={'female'}>Male</MenuItem>        
-          <MenuItem value={'male'}>Female</MenuItem>
+          <MenuItem value={'all-genders'}>All Genders</MenuItem>        
+          <MenuItem value={'female'}>Female</MenuItem>        
+          <MenuItem value={'male'}>Male</MenuItem>
         </Select>
+
       </FormControl>
     </Box>
           </div>

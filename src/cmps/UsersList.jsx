@@ -18,12 +18,12 @@ export function UsersList({
       </div>
       <div className="pagination-container">
         <div className="page-arrow">
-          <ChevronLeftIcon onClick={() => setPageBackward()}>⬅</ChevronLeftIcon>
+          <ChevronLeftIcon onClick={setPageBackward}>⬅</ChevronLeftIcon>
         </div>
         <span className="page-number">Page Number : {page}</span>
         <ChevronRightIcon
           className="page-arrow"
-          onClick={() => setPageForward()}
+          onClick={setPageForward}
         >
           ➡
         </ChevronRightIcon>

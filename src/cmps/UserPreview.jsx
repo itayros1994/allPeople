@@ -7,7 +7,7 @@ export function UserPreview({ user, detailsMode }) {
   return (
     <div className="link">
       <div className="user-preview-container link">
-        <Avatar className="user-avatar" src={user.picture.thumbnail} alt="" />
+        <img className="user-avatar" src={user.picture.thumbnail} alt="" />
         <div className="user-names-container">
           <div className="user-name-first">
             {user.name.first.substring(0, 1)}
