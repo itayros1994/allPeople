@@ -5,15 +5,15 @@ export const UsersService = {
 }
 
 function getUsers(page, gender) {
+    console.log(gender);
     if (gender === 'all-genders') {
-        console.log('all-gender', gender);
         return axios
-        .get(`https://randomuser.me/api/?page=${page}&results=10&seed=abc`)
-        .then(res => res.data)
+            .get(`https://randomuser.me/api/?page=${page}&results=10&seeds=abc'`)
+            .then(res => res.data)
+
     } else {
-        console.log('male or female' , gender);
         return axios
-            .get(`https://randomuser.me/api/?gender=${gender}&results=10&page=${page}&seed='abc`)
+            .get(`https://randomuser.me/api/?gender=${gender}&results=10&page=${page}&seeds='abc'`)
             .then(res => res.data)
     }
 }

@@ -49,6 +49,10 @@ margin:auto;
   display: none !important;
 }
 
+.table-header{
+  cursor: pointer;
+}
+
 
 @media only screen and (max-width: 600px) {
   .user-preview-container {
