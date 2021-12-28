@@ -1,0 +1,30 @@
+.user-list-main-container {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.page-number {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.page-arrow {
+  color: white;
+  cursor: pointer;
+}
+
+.page-arrow:hover {
+  color: grey;
+}

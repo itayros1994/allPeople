@@ -1,5 +1,6 @@
 @import "../header.scss";
 @import "../style/usersPreview.scss";
+@import "../style/userList.scss";
 
 .footer {
   display: flex;
@@ -14,6 +15,7 @@
   color: white;
   position: fixed;
   opacity: 50%;
+  display: none !important;
 }
 
 .main-container {
@@ -21,4 +23,34 @@
   width: 80%;
   color: black;
   margin: auto;
+}
+
+.link {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+body {
+  background-color: rgb(55, 88, 131);
+}
+
+.filter-by {
+width: 50%;
+margin:auto;
+  
+}
+
+.filter-by-container{
+  margin: 20px;
+}
+
+.none {
+  display: none !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .user-preview-container {
+    width: 100%;
+  }
 }

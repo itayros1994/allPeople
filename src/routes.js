@@ -1,5 +1,5 @@
 import { AllUsersApp } from "./pages/AllUsersApp";
-import { Detalils } from "./pages/Detalils";
+import { UserDetalils } from "./pages/UserDetalils";
 
 export const routes = [
 
@@ -9,7 +9,7 @@ export const routes = [
     }, 
     {
         path: '/details/:user',
-        component: Detalils
+        component: UserDetalils
         
     }, 
 ]

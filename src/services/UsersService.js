@@ -1,15 +1,15 @@
 import axios from 'axios'
 
-const API_KEY = 'Y8RgWkfnkR5YW0qdYKAo37G47EibuAGA'
-
 export const UsersService = {
 getUsers
 }
 
-function getUsers(page) {
+function getUsers(page,gender) {
     return axios
-        .get(`https://randomuser.me/api/?page=${page}&results=10&seed=abc`)
+        .get(`https://randomuser.me/api/?gender=${gender}&results=10&page=${page}`)
         .then(res => res.data)
 }
+
+
 
 
