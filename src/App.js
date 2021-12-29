@@ -1,10 +1,8 @@
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { routes } from "./routes";
-import logo from "./logo.svg";
+import { Header } from "./cmps/Header";
 import "./App.css";
 import "./assets/style/main.scss";
-import { Footer } from "./cmps/Footer";
-import { Header } from "./cmps/Header";
 
 function App() {
   return (
@@ -25,7 +23,6 @@ function App() {
             })}
           </div>
         </Switch>
-        <Footer />
       </Router>
     </div>
   );

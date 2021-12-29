@@ -4,16 +4,10 @@ export const UsersService = {
     getUsers
 }
 
-function getUsers(page, gender) {
-    console.log(gender);
-    if (gender === 'all-genders') {
-        return axios
-            .get(`https://randomuser.me/api/?page=${page}&results=10&seeds=abc'`)
-            .then(res => res.data)
+function getUsers(page) {
 
-    } else {
-        return axios
-            .get(`https://randomuser.me/api/?gender=${gender}&results=10&page=${page}&seeds='abc'`)
-            .then(res => res.data)
-    }
+    return axios
+        .get(`https://randomuser.me/api/?page=${page}&results=10&seeds=abc'`)
+        .then(res => res.data)
+        .catch(err => console.log(err))
 }

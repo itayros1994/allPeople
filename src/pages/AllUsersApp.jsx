@@ -30,24 +30,27 @@ export function AllUsersApp() {
 
 	const sortUsers = (sortBy) => {
 		if (sortBy === 'age') {
-			const sortedUsers = users.sort((a, b) => b.registered.age - a.registered.age)
+			const sortedUsers = users.sort((a, b) => b.registered.age - a.registered.age);
 			console.log(sortedUsers);
-				setUsers([...sortedUsers]);
-			}
+			setUsers([ ...sortedUsers ]);
+		}
 
 		if (sortBy === 'name') {
-			const sortedUsers = users.sort((a, b) => b.name.first.localeCompare(a.name.first) )
-				setUsers([...sortedUsers]);
-			}
+			const sortedUsers = users.sort((a, b) => b.name.first.localeCompare(a.name.first));
+			setUsers([ ...sortedUsers ]);
+		}
+
 		if (sortBy === 'gender') {
-			const sortedUsers = users.sort((a, b) => b.gender.localeCompare(a.gender) )
-				setUsers([...sortedUsers]);
-			}
-		};
+			const sortedUsers = users.sort((a, b) => b.gender.localeCompare(a.gender));
+			setUsers([ ...sortedUsers ]);
+		}
+	};
 
 	return (
 		<div>
-			<h1>All Users App !</h1>
+			<h1>
+				All Users App<span className="green-point">.</span>
+			</h1>
 			<div>
 				<UsersList
 					users={users}

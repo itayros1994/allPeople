@@ -28,3 +28,12 @@
 .page-arrow:hover {
   color: grey;
 }
+
+.users-list {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
