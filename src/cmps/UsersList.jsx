@@ -29,8 +29,8 @@ export function UsersList({ users, setPageForward, setPageBackward, page, setToF
 				</ChevronRightIcon>
 			</div>
 			<TableContainer component={Paper}>
-				<Table sx={{ minWidth: 650 }} aria-label="simple table">
-					<TableHead>
+				<Table className='table-header-container' sx={{ minWidth: 650 }} aria-label="simple table">
+					<TableHead >
 						<TableRow>
 							<TableCell>Avatar</TableCell>
 							<TableCell className="table-header" onClick={() => sortUsers('name')} >Full-Name</TableCell>
@@ -67,7 +67,7 @@ export function UsersList({ users, setPageForward, setPageBackward, page, setToF
 								<TableCell>
 									<p>
 										<a className="email" href={`mailto:${user.email}`}>
-											Send Me Email 📨
+											📨
 										</a>
 									</p>
 								</TableCell>
