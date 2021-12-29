@@ -20,7 +20,7 @@ export function AllUsersApp() {
 	};
 
 	const setPageBackward = () => {
-		if (page === 1) return;
+		if (page === 0) return;
 		setPage((prevPage) => page--);
 	};
 

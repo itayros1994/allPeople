@@ -34,18 +34,18 @@ export function UsersList({ users, setPageForward, setPageBackward, page, sortUs
 			<TableContainer component={Paper}>
 				<Table className="table-header-container" sx={{ minWidth: 650 }} aria-label="simple table">
 					<TableHead>
-						<TableRow>
-							<TableCell>Avatar</TableCell>
-							<TableCell className="table-header" onClick={() => sortUsers('name')}>
+						<TableRow> 
+							<TableCell className="table-font">Avatar</TableCell>
+							<TableCell className="table-header table-font" onClick={() => sortUsers('name')}>
 								Full-Name
 							</TableCell>
-							<TableCell className="table-header" onClick={() => sortUsers('age')}>
+							<TableCell className="table-header table-font" onClick={() => sortUsers('age')}>
 								Age
 							</TableCell>
-							<TableCell className="table-header" onClick={() => sortUsers('gender')}>
+							<TableCell className="table-header table-font" onClick={() => sortUsers('gender')}>
 								Gender
 							</TableCell>
-							<TableCell>Email</TableCell>
+							<TableCell className="table-font">Email</TableCell>
 						</TableRow>
 					</TableHead>
 					<TableBody>
@@ -67,13 +67,13 @@ export function UsersList({ users, setPageForward, setPageBackward, page, sortUs
 										<img className="user-avatar" src={user.picture.thumbnail} />
 									</Link>
 								</TableCell>
-								<TableCell>
+								<TableCell className='table-font'>
 									{user.name.first.substring(0, 1)}
 									{user.name.last.substring(0, 1)}
 								</TableCell>
-								<TableCell>{user.registered.age}</TableCell>
-								<TableCell>{user.gender}</TableCell>
-								<TableCell>
+								<TableCell className='table-font'>{user.registered.age}</TableCell>
+								<TableCell className='table-font'>{user.gender}</TableCell>
+								<TableCell className='table-font'>
 									<p>
 										<a className="email" href={`mailto:${user.email}`}>
 											📨
