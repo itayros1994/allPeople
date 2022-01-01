@@ -5,7 +5,7 @@ export const UsersService = {
 }
 
 function getUsers(page) {
-
+    
     return axios
         .get(`https://randomuser.me/api/?page=${page}&results=10&seeds=abc'`)
         .then(res => res.data)
